@@ -63,7 +63,7 @@ a {
     display: flex;
     align-content: center;
     justify-content: space-between;
-    height: 79px;
+    height: 100%;
     margin-bottom: 60px;
 }
 .LogoBooki {
@@ -78,6 +78,9 @@ a {
     list-style: none;
     gap: 68px;
     margin: 1px;
+}
+.Styletext{
+    font-size: 17px;
 }
 .marginlist {
     margin-top: 16px;
@@ -119,6 +122,9 @@ a {
     background-color: #0065FC;
     border-radius: 0px 15px 15px 0px;
 }
+.DesktopNone {
+    display: none;
+ }
 .Search {
     display: flex;
     justify-content: center;
@@ -139,7 +145,7 @@ a {
    margin-bottom: 30px;
    gap: 15px;
    height: 50px;
-   width: 758px;
+   width: 100%;
 }
 .FiltreBox {
    display: flex;
@@ -163,7 +169,7 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 1340px;
+    width: 100%;
     height: 24px;
     margin-bottom: 40px;
 }
@@ -198,20 +204,28 @@ a {
 }
 .hebergements-card {
    display: flex;
-   width: 811px;
    height: 207.25px;
    padding: 0px 0px 15px 0px;
    gap: 30px;
    border-radius: 20px;
    margin-top: 30px;
-   margin-left: 0px;
+   width: 99%;
+}
+.hebergements-card .card {
+   width: 100%;
+}
+.hebergements-card a {
+  width: 100%;
+}
+.hebergements-card .card-content {
+    width:100%;
 }
 .hebergements-card img{
-    width: 240.33px;
+    width: 100%;
     height: 124px;
     gap: 0px;
     border-radius: 20px 20px 0px 0px;
-    border: 5px; 
+    border: 5px;
 }
 .hebergements-card .card-title {
     margin-left: 10px;
@@ -226,7 +240,7 @@ a {
 .hebergements-card .card-rating {
     margin-left: 10px;
     margin-top: 5px;
-    margin-bottom: 8px;  
+    margin-bottom: 8px; 
 }
 .BouttonAffichezplus {
     margin-bottom: 0px;
@@ -288,7 +302,7 @@ a {
     margin-left: 30px;
 }
 .Activites img {
-    width: 297.5px;
+    width: 100%;
     height: 380px;
     border-radius: 20px 20px 0px 0px; 
 }
@@ -298,7 +312,9 @@ a {
     padding-left: 0px;
     padding-right: 0px;
     padding-top: 0px;
-
+}
+.Activites a {
+    width: 100%;
 }
 .Activites .card-title{
     margin-left: 15px;
@@ -307,18 +323,18 @@ a {
 .footer{
     display: flex;
     justify-content: space-between;
-    width: 1340px;
+    width: 100%;
     height: 163px;
     margin-top: 40px;
     background-color: #F2F2F2;
 }
 .footer .card {
-    width: 446.67px;
+    width: 100%;
     height: 163px;
     gap: 15px;
     background: none;
     margin-left: 15px;
-   
+    
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -336,7 +352,7 @@ a {
     .InfoBar {
         margin-top: 90px;
         margin-bottom: 30px;
-        width: 924px;
+        width: 100%;
         height: 24px;
     }
     .hebergements-and-populaires {
@@ -346,7 +362,6 @@ a {
         width: 100%;
     }
     .hebergements-card img{
-        width: 258.33px;
         height: 124px;
     } 
     .populaires {
@@ -372,21 +387,109 @@ a {
         font-size: 13px;
     }
     .Activites img {
-        width: 193.5px;
+        width: 100%;
         height: 200px;
     }
     .Activites .card-title{
         margin-right: 0px;
-        width: 155.5px;
+        width: 100%;
         height: 38px;
 
     }
     .footer{
-        width: 924px;
+        width: 100%;
     }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+    .main-container {
+        padding: 0px;
+    }
+    .Menu {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px; 
+    }
+    .LogoBooki {
+        padding: 10px;
+    }
+    .List {
+        width: 100%;
+        gap: 20px;
+        padding: 0px;
+    }
+    .Styletext {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .bordureNav {
+        border-top: 0px;
+        border-bottom: 2px solid #0065FC;
+    }
+    .SearchTitle {
+        margin-left: 20px;
+    }
+    .ButtonSearch {
+        width: 49px;
+        height: 49px;
+        border-radius: 15px;
+        border: 1px 0px 0px 0px;
+    }
+    .Filtre {
+        height: 161px;
+        width: 100%;
+        margin-left: 20px;
+     }
+    .FiltreBox {
+       flex-wrap: wrap;
+       width: 100%;
+       height: 161px;
+    }
+    .InfoBar {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 20px;
+        width: 100%;
+        height: 38px;
+    }
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .hebergements-card {
+        flex-direction: column;
+        width: 100%;
+        height: 207px;
+}
+    .hebergements-card img{
+       width: 100%;
+       height: 124px;
+}
+    .Activites {
+      display: flex;
+      flex-direction: column;
+}
+    .Activites .card {
+      width: 100%;
+      height: 200px;
+}
+    .Activites img {
+      width: 100%;
+      height: 141px;
+}
+     .footer {
+        flex-direction: column;
+        width: 100%;
+        height: 461px;
+     }
+     .MobileNone {
+        display: none;
+     }
+     .DesktopNone {
+        display: block;
+     }
 }
