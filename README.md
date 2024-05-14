@@ -6,7 +6,7 @@ Note de synthèse
 Voici l’ensemble des points fonctionnels et techniques à prendre en compte pour le développement du nouveau
 site Booki. L’ensemble de ces éléments a été validé par l’équipe Produit, il est donc important de les respecter.
 
-Spécifications fonctionnelles
+Spécifications fonctionnelles :
 
 ● Les usagers pourront rechercher des hébergements dans la ville de leur choix.
 
@@ -35,7 +35,7 @@ l’ambiance.
 ● Les filtres ne doivent pas être fonctionnels - il s’agit juste d’une première version
 pour valider l’interface..
 
-Spécifications techniques
+Spécifications techniques :
 
 Trois maquettes ont été réalisées : desktop, tablette et mobile.
 
@@ -49,6 +49,7 @@ Nous avons convenu avec le designer UI d’utiliser 1024 px et 768 px :
 ● et tout ce qui est en dessous de 768 pour les téléphones portables.
 
 Largeur min - max:
+
 Pour éviter d’étirer la page web sur la largeur de façon excessive, il va falloir déterminer
 une largeur maximum de 1440 px. Au-delà, une marge blanche doit apparaître sur les
 côtés et le contenu doit se limiter à 1440 px de large.
