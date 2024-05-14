@@ -59,6 +59,7 @@ a {
     color: var(--main-bg-color)
 }
 /****Header****/
+
 .Menu {
     display: flex;
     align-content: center;
@@ -66,31 +67,37 @@ a {
     height: 100%;
     margin-bottom: 60px;
 }
+
 .LogoBooki {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     margin-top: 10px;
 }
+
 .List {
     display: flex;
     align-items: center;
     list-style: none;
     gap: 68px;
-    margin: 1px;
+    margin: 0px;
 }
+
 .Styletext{
     font-size: 17px;
 }
+
 .marginlist {
     margin-top: 16px;
 }
+
 .Colorhebergement {
     color: rgba(0, 101, 252, 1);
 }
+
 .bordureNav {
     border-top: 2px solid #0065FC;
-    padding: 29px;
+    padding: 15px;
     padding-left: 0px;
     padding-right: 0px;
 }
@@ -98,7 +105,7 @@ a {
 .SearchBar {
     display: flex;
     justify-content: flex-start;
-    width: 377px;
+    width: 100%;
     height: 49px;
     border: 1px solid #F2F2F2;
 }
@@ -125,7 +132,8 @@ a {
 .DesktopNone {
     display: none;
  }
-.Search {
+
+ .Search {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,6 +146,7 @@ a {
     font-weight: bold;
 }
 /***Filtres***/
+
 .Filtre {
    display: flex;
    align-items: center;
@@ -147,11 +156,13 @@ a {
    height: 50px;
    width: 100%;
 }
+
 .FiltreBox {
    display: flex;
    align-items: center;
    gap: 15px;
 }
+
 .FiltreIcon {
     display: flex;
     align-items: center;
@@ -161,10 +172,23 @@ a {
     border-radius: 25px;
     height: 35px;
 }
+
+.FiltreMobile {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.FiltreIcon {
+    width: 100%;
+}
+
 .FiltreBox :hover {
     background-color:rgba(222, 235, 255, 1);
 }
+
 /***InfoBar***/
+
 .InfoBar {
     display: flex;
     align-items: center;
@@ -173,6 +197,7 @@ a {
     height: 24px;
     margin-bottom: 40px;
 }
+
 .IconBar {
     display: flex;
     align-items: center;
@@ -182,7 +207,9 @@ a {
     border: 1px solid rgba(217, 217, 217, 1);
     border-radius: 25px;
 }
+
 /****** Hebergements And Populaires ***********/
+
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -196,12 +223,15 @@ a {
 }
 
 /****** Hebergements ******/
+
 .hebergements {
     width: 65%;
 }
+
 .hebergements-title {
     margin: 0;
 }
+
 .hebergements-card {
    display: flex;
    height: 207.25px;
@@ -211,15 +241,19 @@ a {
    margin-top: 30px;
    width: 99%;
 }
+
 .hebergements-card .card {
    width: 100%;
 }
+
 .hebergements-card a {
   width: 100%;
 }
+
 .hebergements-card .card-content {
     width:100%;
 }
+
 .hebergements-card img{
     width: 100%;
     height: 124px;
@@ -227,26 +261,32 @@ a {
     border-radius: 20px 20px 0px 0px;
     border: 5px;
 }
+
 .hebergements-card .card-title {
     margin-left: 10px;
     margin-top: 8px;
     margin-bottom: 0px;   
 }
+
 .hebergements-card .card-subtitle {
     margin-left: 10px;
     margin-top: 8px; 
     margin-bottom: 0px;    
 }
+
 .hebergements-card .card-rating {
     margin-left: 10px;
     margin-top: 5px;
     margin-bottom: 8px; 
 }
+
 .BouttonAffichezplus {
     margin-bottom: 0px;
     margin-top: 30px;
 }
+
 /****** Populaires ******/
+
 .populaires {
     width: 32%;
 }
@@ -290,22 +330,27 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+
 /****** Activites ******/
+
 .Activites {
     display: flex;
     gap: 30px;
     margin-left: 30px; 
 }
+
 .ActivitesTitle {
     margin-top: 50px;
     margin-bottom: 30px;
     margin-left: 30px;
 }
+
 .Activites img {
     width: 100%;
     height: 380px;
     border-radius: 20px 20px 0px 0px; 
 }
+
 .Activites .card {
     box-shadow: 0px 3px 15px 0px #F2F2F2;
     border-radius: 20px;
@@ -313,13 +358,16 @@ a {
     padding-right: 0px;
     padding-top: 0px;
 }
+
 .Activites a {
     width: 100%;
 }
+
 .Activites .card-title{
     margin-left: 15px;
 }
 /****** Footer ******/
+
 .footer{
     display: flex;
     justify-content: space-between;
@@ -328,6 +376,7 @@ a {
     margin-top: 40px;
     background-color: #F2F2F2;
 }
+
 .footer .card {
     width: 100%;
     height: 163px;
@@ -342,6 +391,7 @@ a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+   
     .Filtre {
         flex-direction: column;
         align-items: flex-start;
@@ -349,21 +399,26 @@ a {
         margin-top: 0px;
         gap: 0px;
     }
+    
     .InfoBar {
         margin-top: 90px;
         margin-bottom: 30px;
         width: 100%;
         height: 24px;
     }
+    
     .hebergements-and-populaires {
         flex-direction: column;
     }
+    
     .hebergements {
         width: 100%;
     }
+    
     .hebergements-card img{
         height: 124px;
     } 
+    
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -394,7 +449,6 @@ a {
         margin-right: 0px;
         width: 100%;
         height: 38px;
-
     }
     .footer{
         width: 100%;
@@ -404,92 +458,191 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
     .main-container {
         padding: 0px;
     }
+    
     .Menu {
         flex-direction: column;
         align-items: center;
         margin-bottom: 0px; 
     }
+    
     .LogoBooki {
         padding: 10px;
     }
+    
     .List {
+        justify-content: space-around;
         width: 100%;
-        gap: 20px;
+        gap: 0px;
         padding: 0px;
     }
+    
     .Styletext {
+        padding-left: 50px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .bordureNav {
+        border-top: 0px;
+        border-bottom: 2px solid #0065FC;
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    .bordureNav {
-        border-top: 0px;
-        border-bottom: 2px solid #0065FC;
-    }
+    
     .SearchTitle {
         margin-left: 20px;
     }
+    
+    .Search {
+        width: 100%;
+        height: 49px;
+    }
+    
     .ButtonSearch {
         width: 49px;
         height: 49px;
         border-radius: 15px;
-        border: 1px 0px 0px 0px;
+        border: 1px;
     }
+    
     .Filtre {
         height: 161px;
         width: 100%;
+    }
+    
+    .FiltreTitle {
         margin-left: 20px;
-     }
+    }
+    
     .FiltreBox {
-       flex-wrap: wrap;
+       flex-direction: column;
        width: 100%;
        height: 161px;
     }
+    
+    .FiltreIcon{
+        width: 100%;
+    }
+    
+    .FiltreMobile{
+        justify-content: space-between;
+        gap: 10px;
+        width: 90%;
+    }
+    
     .InfoBar {
         margin-top: 30px;
         margin-bottom: 30px;
         margin-left: 20px;
-        width: 100%;
+        width: 90%;
         height: 38px;
     }
+    
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+    
+    .hebergements-and-populaires section {
+        padding: 0px;
+        background:none;
+    }
+    
+    .populairesBackground {
+        background-color: #F2F2F2;
+        height: 570px
+    }
+    
+    .populaires {
+        margin-top: 5px;
+    }
+    
     .populaires-cards {
         display: flex;
         flex-direction: column;
+        margin-left: 20px;
     }
+    
+    .populaires-cards a {
+        width: 96%;
+    }
+    
+    .populaires-cards .card {
+        margin-top: 15px;
+    }
+    
+    .populaires-title {
+        padding-top: 30px;
+        padding-right: 20px;
+        padding-left: 20px; 
+    }
+    
+    .populaires-cards .card-title {
+        font-size: 18px;
+    }
+    
+    .populaires-cards .card-subtitle {
+        font-size: 16px;
+    }
+    
+    .hebergements {
+        margin-top: 50px;
+        padding: 0px;
+        margin-left: 20px;
+    }
+    
+    .hebergementsMobile {
+        margin-top: 495px;
+    }
+    
     .hebergements-card {
         flex-direction: column;
-        width: 100%;
+        width: 86%;
         height: 207px;
-}
+        gap: 15px;
+    }
     .hebergements-card img{
        width: 100%;
        height: 124px;
-}
+    }
+    
+    .BouttonAffichezplus {
+       margin-top: 530px;
+       margin-left: 10px;
+    }
+    
     .Activites {
       display: flex;
       flex-direction: column;
-}
+    }
+    
     .Activites .card {
-      width: 100%;
+      width: 92%;
       height: 200px;
-}
+    }
+    
     .Activites img {
       width: 100%;
       height: 141px;
-}
-     .footer {
+    }
+    
+    .footer {
         flex-direction: column;
         width: 100%;
         height: 461px;
-     }
+    }
+     
      .MobileNone {
         display: none;
-     }
+    }
+     
      .DesktopNone {
         display: block;
-     }
+    }
 }
